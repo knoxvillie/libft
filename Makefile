@@ -1,69 +1,62 @@
-NAME = libft.a
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/11/11 14:34:06 by kfaustin          #+#    #+#              #
+#    Updated: 2022/11/11 17:47:55 by kfaustin         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
+SRC =	ft_isalnum.c ft_isalpha.c ft_isdigit.c \
+		ft_isprint.c ft_isascii.c ft_strlen.c \
+		ft_memset.c ft_bzero.c ft_strlcpy.c \
+		ft_strlcat.c ft_toupper.c ft_tolower.c \
+		ft_strchr.c ft_strrchr.c ft_atoi.c \
+		ft_strncmp.c ft_memcpy.c ft_memchr.c \
+		ft_memcmp.c ft_memmove.c ft_strnstr.c \
+		ft_calloc.c ft_strdup.c ft_substr.c \
+		ft_strjoin.c ft_strtrim.c ft_split.c \
+		ft_itoa.c ft_strmapi.c ft_striteri.c \
+		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
+		ft_putnbr_fd.c
+
+SRC_OBJ = $(SRC:.c=.o)
+
+BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
+		ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
+		ft_lstclear.c ft_lstiter.c ft_lstmap.c
+
+BONUS_OBJ = $(BONUS:.c=.o)
+
+NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-
-SRC =   ft_isalnum.c \
-        ft_isalpha.c \
-        ft_isdigit.c \
-        ft_isprint.c \
-        ft_isascii.c \
-        ft_strlen.c \
-        ft_memset.c \
-        ft_bzero.c \
-        ft_strlcpy.c \
-        ft_strlcat.c \
-        ft_toupper.c \
-        ft_tolower.c \
-        ft_strchr.c \
-        ft_strrchr.c \
-        ft_atoi.c \
-        ft_strncmp.c \
-        ft_memcpy.c \
-        ft_memchr.c \
-        ft_memcmp.c \
-        ft_memmove.c \
-        ft_strnstr.c \
-        ft_calloc.c \
-        ft_strdup.c \
-        ft_substr.c \
-        ft_strjoin.c \
-        ft_strtrim.c \
-        ft_split.c \
-        ft_itoa.c \
-        ft_strmapi.c \
-        ft_striteri.c \
-        ft_putchar_fd.c \
-        ft_putstr_fd.c \
-        ft_putendl_fd.c \
-        ft_putnbr_fd.c \
-        ft_lstnew.c \
-        ft_lstadd_front.c \
-        ft_lstsize.c \
-        ft_lstlast.c \
-        ft_lstadd_back.c \
-        ft_lstdelone.c \
-        ft_lstclear.c \
-        ft_lstiter.c \
-        ft_lstmap.c
-
-OBJ = $(SRC:.c=.o)
+LIB = ar rcs
+RM = rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar rcs $(NAME) $(OBJ)
-	ranlib $(NAME)
+$(NAME): $(SRC_OBJ)
+	$(LIB) $(NAME) $(SRC_OBJ)
 
+bonus: $(BONUS_OBJ) $(SRC_OBJ)
+	$(LIB) $(NAME) $(BONUS_OBJ) $(SRC_OBJ)
 clean:
-	rm -rf $(OBJ)
+	$(RM) $(SRC_OBJ) $(BONUS_OBJ)
 
 fclean: clean
-	rm -rf $(NAME)
-	rm -rf $(OBJ)
+	$(RM) $(NAME)
 
 re: fclean all
 
 so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJ)
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(BONUS)
+	gcc -nostartfiles -shared -o libft.so $(SRC_OBJ) $(BONUS_OBJ)
+
+SO = libft.so
+
+test:
+	$(RM) $(SRC_OBJ) $(BONUS_OBJ) $(SO) $(NAME)

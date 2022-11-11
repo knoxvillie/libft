@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:59:41 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/11 11:29:48 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/11 14:22:40 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include<stdlib.h>
-# include<bsd/string.h>
 # include<unistd.h>
 
 // Part 1:
