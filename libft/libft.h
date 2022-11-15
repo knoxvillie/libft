@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:59:41 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/11 14:22:40 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/15 15:42:53 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include<stdlib.h>
 # include<unistd.h>
 
-// Part 1:
+// Mandatory Part 1:
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -40,7 +40,7 @@ void	*ft_memset(void *buffer, int c, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
-// Part 2:
+// Mandatory Part 2:
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 char	*ft_strjoin(char const *s1, char const *s2);

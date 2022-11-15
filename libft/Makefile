@@ -6,7 +6,7 @@
 #    By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/11 14:34:06 by kfaustin          #+#    #+#              #
-#    Updated: 2022/11/15 15:16:28 by kfaustin         ###   ########.fr        #
+#    Updated: 2022/11/15 15:41:47 by kfaustin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,11 +52,13 @@ fclean: clean
 
 re: fclean all
 
+# Rules to be used in Libft-war-machine test
 so:
 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC) $(BONUS)
 	gcc -nostartfiles -shared -o libft.so $(SRC_OBJ) $(BONUS_OBJ)
 
 SO = libft.so
 
+# Rule to clean all .o .a and libft.so
 test:
 	$(RM) $(SRC_OBJ) $(BONUS_OBJ) $(SO) $(NAME)
