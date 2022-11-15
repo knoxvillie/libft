@@ -3,6 +3,8 @@
 ![Check](/images/pic1.png)
 ![Check_funcs](/images/pic2.png)
 
+## Norminette:
+- norminette 3.3.51
 # Tests:
 - [Libftest](https://github.com/jtoty/Libftest)
 - [Libft Unit Tests](https://github.com/alelievr/libft-unit-test)
