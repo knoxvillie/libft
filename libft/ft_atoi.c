@@ -6,13 +6,15 @@
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 10:06:47 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/08 10:12:41 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/15 16:48:01 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-
-*/
+/**
+ *	The atoi() function converts the initial portion of the string
+ *	pointed to by ptr to int representation.
+ *	Not overflow protected.
+**/
 int	ft_atoi(const char *ptr)
 {
 	int	sign;
