@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 10:18:23 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/08 12:23:58 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/15 13:06:27 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,20 @@
 /*
 
 */
+void	*ft_memchr(const void *str, int c, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		if (*((unsigned char *)str + i) == ((unsigned char)c))
+			return ((void *)str + i);
+		i++;
+	}
+	return (NULL);
+}
+/* Error encountered while testing
 void	*ft_memchr(const void *str, int c, size_t n)
 {
 	size_t	i;
@@ -32,3 +46,4 @@ void	*ft_memchr(const void *str, int c, size_t n)
 		return (str_cpy + i);
 	return (0);
 }
+*/

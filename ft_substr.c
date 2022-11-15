@@ -6,14 +6,13 @@
 /*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:10:20 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/09 12:19:20 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/15 13:20:13 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
 /*
-
 */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -38,7 +37,6 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	char	*substring;
 	size_t	size;
 	int		i;
-
 	if (str == NULL)
 		return (NULL);
 	if (start >= len)
