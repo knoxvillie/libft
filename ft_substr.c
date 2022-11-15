@@ -15,6 +15,24 @@
 /*
 
 */
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	size_t	i;
+	char	*ptr;
+
+	ptr = (char *)malloc((len + 1) * sizeof(char));
+	if (!ptr || !s)
+		return (0);
+	i = 0;
+	while (len > i && *(s + start + i) != '\0' && start < ft_strlen((char *)s))
+	{
+		*(ptr + i) = *(s + start + i);
+		i++;
+	}
+	*(ptr + i) = '\0';
+	return (ptr);
+}
+/* test_ft_substr: Error encountered while testing
 char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
 	char	*substring;
@@ -37,4 +55,4 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	}
 	*(substring + i) = '\0';
 	return (substring);
-}
+}*/
