@@ -10,6 +10,7 @@
 	<img src="https://img.shields.io/github/last-commit/knoxvillie/libft?style=for-the-badge" />
    	<img src="https://img.shields.io/badge/NORMINETTE-3.3.51-blue?style=for-the-badge&logo=" />
 </p>
+
 <h2 align="center">
 Overview
 </h2>
@@ -29,7 +30,32 @@ The main goal of this project is to build a library containing a variety of func
 	:medal_sports: Part 1 - Libc functions
 </h2>
 
-`ft_atoi` `ft_bzero` `ft_calloc` `ft_isalnum` `ft_isalpha` `ft_isascii` `ft_isdigit` `ft_isprint` `ft_memchr` `ft_memcmp` `ft_memcpy` `ft_memmove` `ft_memset` `ft_strchr` `ft_strdup` `ft_strlcat` `ft_strlcpy` `ft_strlen` `ft_strncmp` `ft_strnstr` `ft_strrchr` `ft_tolower` `ft_toupper` <br />
+**`String manipulation:`** 
+* `ft_atoi`
+* `ft_isalnum` 
+* `ft_isalpha` 
+* `ft_isascii` 
+* `ft_isdigit` 
+* `ft_isprint`
+* `ft_strchr` 
+* `ft_strdup` 
+* `ft_strlcat` 
+* `ft_strlcpy` 
+* `ft_strlen` 
+* `ft_strncmp` 
+* `ft_strnstr` 
+* `ft_strrchr` 
+* `ft_tolower` 
+* `ft_toupper` 
+
+**`Memory manipulation`**
+* `ft_bzero` 
+* `ft_calloc`
+* `ft_memchr` 
+* `ft_memcmp` 
+* `ft_memcpy` 
+* `ft_memmove` 
+* `ft_memset`
 
 <h2 align="left">
 	:medal_sports: Part 2 - Additional functions
