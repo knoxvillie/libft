@@ -4,7 +4,7 @@
 
 <p align="center">
 	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success?style=for-the-badge" />
-	<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/knoxvillie/libft?style=for-the-badge&logo=github">
+	<img src="https://img.shields.io/github/repo-size/knoxvillie/libft?style=for-the-badge&logo=github">
 	<img src="https://img.shields.io/github/languages/count/knoxvillie/libft?style=for-the-badge&logo="/>
 	<img src="https://img.shields.io/github/languages/top/knoxvillie/libft?style=for-the-badge" />
 	<img src="https://img.shields.io/github/last-commit/knoxvillie/libft?style=for-the-badge" />
