@@ -1,31 +1,39 @@
 <div align="center">
-	<a href="https://github.com/knoxvillie/libft">
-		<img src="images/logo.png" alt="Logo" width="80" height="80">
-	</a>
-	<h1>Libft Project</h1>
-	<p>42 Porto - Libft - Level 0</p>
+  <!-- Logo -->
+  <a href="https://github.com/knoxvillie/libft">
+  <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <!-- Project Name -->
+  <h1>Libft Project</h1>
+
+  <!-- Short Description -->
+  <p>42 Porto Libft</p>
+
+  <!-- Badges -->
+  <p>
+    <img src="https://img.shields.io/badge/score-125%20%2F%20100-success?style=for-the-badge" />
+    <img src="https://img.shields.io/github/repo-size/knoxvillie/libft?style=for-the-badge&logo=github">
+    <img src="https://img.shields.io/github/languages/count/knoxvillie/libft?style=for-the-badge&logo=" />
+    <img src="https://img.shields.io/github/languages/top/knoxvillie/libft?style=for-the-badge" />
+    <img src="https://img.shields.io/github/last-commit/knoxvillie/libft?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/NORMINETTE-3.3.51-blue?style=for-the-badge&logo=" />
+  </p>
+
+  <!-- Tree -->
+<h4>
+    <a href="https://github.com/knoxvillie/libft">:large_blue_diamond: View Demo</a>
+  <span> · </span>
+    <a href="https://github.com/knoxvillie/libft">:beetle: Report Bug</a>
+  <span> · </span>
+    <a href="https://github.com/knoxvillie/libft">:speech_balloon: Request Feature</a>
+</h4>
+
+  <h2>:star2: About The Project</h2>
+  <p>
+    The main goal of this project is to build a library containing a variety of functions that will be used throughout the 42 Cursus. Most of the functions are low-level and work directly with memory management and allocation, key concepts of the C language. Learning about the building and implementation of the Makefile is the core of the project.
+  </p>
 </div>
-
-<h1 align="center">
-	Libft 42 Porto
-</h1>
-
-<p align="center">
-	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success?style=for-the-badge" />
-	<img src="https://img.shields.io/github/repo-size/knoxvillie/libft?style=for-the-badge&logo=github">
-	<img src="https://img.shields.io/github/languages/count/knoxvillie/libft?style=for-the-badge&logo=" />
-	<img src="https://img.shields.io/github/languages/top/knoxvillie/libft?style=for-the-badge" />
-	<img src="https://img.shields.io/github/last-commit/knoxvillie/libft?style=for-the-badge" />
-   	<img src="https://img.shields.io/badge/NORMINETTE-3.3.51-blue?style=for-the-badge&logo=" />
-</p>
-
-<h2 align="center">
-Overview
-</h2>
-
-<p align="center">
-The main goal of this project is to build a library containing a variety of functions that will be used throughout the 42 Cursus. Most of the functions are low-level and work directly with memory management and allocation, key concepts of the C language. Learning about the building and implementation of the Makefile is the core of the project.
-</p>
 
 <h2 align="left">
 	 :notebook: Subject
