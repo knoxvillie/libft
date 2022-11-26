@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:29:31 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/04 11:37:49 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/26 15:38:44 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-/*
-	A func altera o os n primeiros bytes de conteudo do buffer para nulo.
+/**
+ * The bzero() function writes n null bytes to the buffer.
+ * If n is zero, bzero() does nothing.
 */
 
 void	ft_bzero(void *buffer, size_t n)

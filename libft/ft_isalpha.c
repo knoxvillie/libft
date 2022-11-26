@@ -3,16 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:57:56 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/03 12:16:08 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/26 15:49:03 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-	Se o valor do char c estiver entre 'A' e 'Z' ou 'a' e 'z', entao eh alfabetico.
+/**
+ *	- The isalpha() function tests for any character for which
+ *	isupper(3) or islower(3) is true.  The value of the argument must be
+ *	representable as an unsigned char or the value of EOF.
+ *
+ *	- The isalpha() function returns zero if the character tests false and
+ *	returns non-zero if the character tests true.
 */
+
+int	ft_isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
+}
+
+/* Old versions:
 int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
@@ -20,3 +35,4 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+*/

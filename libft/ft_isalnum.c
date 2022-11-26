@@ -3,19 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:48:07 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/03 15:21:32 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/26 15:45:15 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-/*
-	Se valor do char c estiver entre ('A' e 'Z' ou 'a' e 'z') ou ('0' e '9'),
-	entao eh alfanumerico.
+/**
+ *	- The isalnum() function tests for any character for which isalpha(3) or
+ *	isdigit(3) is true.  The value of the argument must be representable as
+ *	an unsigned char or the value of EOF.
+ *
+ *	- The isalnum() function returns zero if the character tests false
+ *	and returns non-zero if the character tests true.
 */
+
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))

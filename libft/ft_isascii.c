@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 12:07:46 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/03 15:22:09 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/26 15:50:21 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-	Se o valor do char c estiver contido no intervalo de '\0' e 'Del',
-	entao tem 7bits.
-*/
+/**
+ *	The isascii() function tests for an ASCII character,
+ *	which is any character between 0 and decimal 127 inclusive.
+**/
+
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
