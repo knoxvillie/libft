@@ -1,3 +1,11 @@
+<div align="center">
+	<a href="https://github.com/knoxvillie/libft">
+		<img src="images/logo.png" alt="Logo" width="80" height="80">
+	</a>
+	<h1>Libft Project</h1>
+	<p>42 Porto - Libft - Level 0</p>
+</div>
+
 <h1 align="center">
 	Libft 42 Porto
 </h1>
@@ -30,31 +38,31 @@ The main goal of this project is to build a library containing a variety of func
 	:medal_sports: Part 1 - Libc functions
 </h2>
 
-**`String manipulation:`** 
+**`String manipulation:`**
 * `ft_atoi`
-* `ft_isalnum` 
-* `ft_isalpha` 
-* `ft_isascii` 
-* `ft_isdigit` 
+* `ft_isalnum`
+* `ft_isalpha`
+* `ft_isascii`
+* `ft_isdigit`
 * `ft_isprint`
-* `ft_strchr` 
-* `ft_strdup` 
-* `ft_strlcat` 
-* `ft_strlcpy` 
-* `ft_strlen` 
-* `ft_strncmp` 
-* `ft_strnstr` 
-* `ft_strrchr` 
-* `ft_tolower` 
-* `ft_toupper` 
+* `ft_strchr`
+* `ft_strdup`
+* `ft_strlcat`
+* `ft_strlcpy`
+* `ft_strlen`
+* `ft_strncmp`
+* `ft_strnstr`
+* `ft_strrchr`
+* `ft_tolower`
+* `ft_toupper`
 
 **`Memory manipulation`**
-* `ft_bzero` 
+* `ft_bzero`
 * `ft_calloc`
-* `ft_memchr` 
-* `ft_memcmp` 
-* `ft_memcpy` 
-* `ft_memmove` 
+* `ft_memchr`
+* `ft_memcmp`
+* `ft_memcpy`
+* `ft_memmove`
 * `ft_memset`
 
 <h2 align="left">
@@ -77,7 +85,7 @@ The main goal of this project is to build a library containing a variety of func
 
 - [Libft-Unit-Test](https://github.com/alelievr/libft-unit-test)
   - ![Screenshot](https://imgur.com/a/dscm1ee)
-    
+
 - [Libft-War-Machine](https://github.com/0x050f/libft-war-machine)
   - ![Screenshot](https://imgur.com/a/h6NHu3t)
 
