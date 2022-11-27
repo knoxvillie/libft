@@ -3,18 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:20:00 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/11 12:00:49 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/27 15:58:12 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-/*
+/**
+ * Allocates (with malloc(3)) and returns an array of string obtained by
+ * splitting 's' using the character 'c' as a delimiter. The array must end
+ * with a NULL pointer.
+ *
+ * - Parameters:
+ * s: The string to be splitted.
+ * c: The delimiter character.
+ *
+ * Returns the array of new strings resulting from the split
+ * or NULL if the allocation fails.
+**/
 
-*/
 static int	ft_wordcount(char const *s, char c)
 {
 	int	i;
