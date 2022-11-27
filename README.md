@@ -263,9 +263,9 @@ Don't forget to give the project a star! Thanks again!
 </h4>
 <h3 align="center">:camera: Screenshots</h3>
 <p align="center">
-<img src="images/pic3.png" alt="Libft-Unit-Test" width="300" height="600"/>
-<img src="images/pic4.png" alt="Libft-Unit-Test" width="300" height="600"/>
-<img src="images/pic5.png" alt="Libft-Unit-Test" width="300" height="600"/>
+<img src="images/pic3.png" alt="Libft-Unit-Test" width="250" height="550"/>
+<img src="images/pic4.png" alt="Libft-Unit-Test" width="250" height="550"/>
+<img src="images/pic5.png" alt="Libft-Unit-Test" width="250" height="550"/>
 </p>
 
 
