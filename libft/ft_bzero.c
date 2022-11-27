@@ -6,13 +6,13 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:29:31 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/26 15:38:44 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/27 14:43:38 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 /**
- * The bzero() function writes n null bytes to the buffer.
+ * The ft_bzero() function writes n null bytes to the buffer.
  * If n is zero, bzero() does nothing.
 */
 

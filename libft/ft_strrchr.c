@@ -3,22 +3,41 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:33:55 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/08 16:04:26 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/27 15:22:17 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-/*
-	A func retorno um porteiro para a ultima
-		ocorrencia de c e str.
-	Retorno: Se nao houver ocorrencia > NULL
-			 Se c = '\0', > ponteiro para final da str
-			 Se nao > ponteiro de indice last_match
-*/
+/**
+ * The ft_strrchr() function is identical to ft_strchr(), except it
+ * locates the last occurrence of c.
+ *
+ * The strrchr() return a pointer to the located character,
+ * or NULL if the character c does not appear in the string.
+**/
+
+char	*ft_strrchr(const char *str, int c)
+{
+	int			i;
+	const char	*buffer;
+
+	i = ft_strlen(str);
+	buffer = (str + i);
+	while (i >= 0)
+	{
+		if (*buffer == c)
+			return ((char *)buffer);
+		buffer--;
+		i--;
+	}
+	if (c == '\0')
+		return ((char *)buffer);
+	return (0);
+}
 
 /* Error basic input
 char	*ft_strrchr(const char *str, int c)
@@ -42,22 +61,3 @@ char	*ft_strrchr(const char *str, int c)
 		return ((char *)(str_cpy + last_match));
 	return (0);
 }*/
-
-char	*ft_strrchr(const char *str, int c)
-{
-	int			i;
-	const char	*buffer;
-
-	i = ft_strlen(str);
-	buffer = (str + i);
-	while (i >= 0)
-	{
-		if (*buffer == c)
-			return ((char *)buffer);
-		buffer--;
-		i--;
-	}
-	if (c == '\0')
-		return ((char *)buffer);
-	return (0);
-}

@@ -6,12 +6,12 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:57:56 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/26 15:49:03 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/27 14:43:19 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
- *	- The isalpha() function tests for any character for which
+ *	- The ft_isalpha() function tests for any character for which
  *	isupper(3) or islower(3) is true.  The value of the argument must be
  *	representable as an unsigned char or the value of EOF.
  *

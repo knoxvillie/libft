@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 10:06:47 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/15 16:48:01 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/27 14:43:45 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
- *	The atoi() function converts the initial portion of the string
+ *	The ft_atoi() function converts the initial portion of the string
  *	pointed to by ptr to int representation.
  *	Not overflow protected.
 **/

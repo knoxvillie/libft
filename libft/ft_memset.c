@@ -3,20 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 14:20:24 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/03 15:28:36 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/27 14:50:57 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-/*
-	Preenche os primeiros n bytes do ponteiro buffer com o char,
-	que tem valor ascii c. O endereco de buffer nao se altera.
-	O type casting garante que a correta representacao de c.
-*/
+/**
+ *	- The ft_memset() function writes n bytes of value c
+ *	(converted to an unsigned char) to buffer.
+ *
+ *	- The ft_memset() function returns the buffer.
+**/
+
 void	*ft_memset(void *buffer, int c, size_t n)
 {
 	size_t	i;

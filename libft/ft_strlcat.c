@@ -3,22 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 14:03:02 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/08 15:54:27 by kfaustin         ###   ########.fr       */
+/*   Updated: 2022/11/27 14:53:49 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-/*
-	A func concatena str em dest se tamanho de
-		dest < dest_size > 0 e src não nulo.
-	Retorna o comprimento da string que se tentou criar.
-	A função ft_strlcat e strlcat funcionam mal no mainfuncs.c,
-		funciona correto com a main deste arquivo.
+/**
+ *	- The ft_strlcat() function concatenate strings with the same input
+ *	parameters and output result as snprintf(3).
+ *
+ *	- ft_strlcat() take the full size of the destination buffer and guarantee
+ *	NUL-termination if there is room.  Note that room for the NUL should be
+ *	included in dest_size.
+ *
+ *	- strlcat() appends string src to the end of dest.  It will append at most
+ *	dst_size - strlen(dst) - 1 characters.  It will then NUL-terminate,
+ *	unless dstsize is 0 or the original dst string was longer than dstsize
+ *	(in practice this should not happen as it means that
+ *	either dst_size is incorrect or that dst is not a proper string).
+ *	- If the src and dest strings overlap, the behavior is undefined.
 */
+
 size_t	ft_strlcat(char *dest, const char *src, size_t dest_size)
 {
 	size_t	i;

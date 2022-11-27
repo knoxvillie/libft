@@ -3,18 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kelvinfa <kelvinfa@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 12:45:42 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/06 20:20:00 by kelvinfa         ###   ########.fr       */
+/*   Updated: 2022/11/27 15:08:44 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-	Itera sobre a string str ate seu byte nulo, retornando seu comprimento.
+/**
+ * The ft_strlen() function computes the length of the string str.
+ *
+ * The ft_strlen() function returns the number (i) of characters that precede the
+ * terminating NUL character.
 */
+
 size_t	ft_strlen(const char *str)
 {
 	size_t	i;
