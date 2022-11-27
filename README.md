@@ -141,70 +141,96 @@
     </details>
   </ul>
 </details>
+
+<details>
+  <summary>Mandatory Part Two</summary>
+  <ul>
+  <details>
+    <summary>ft_itoa.c</summary>
+    <p>Allocates (with malloc(3)) and returns a string representing the integer received as an argument.Negative numbers must be handled.</p>
+    </details>
+  <details>
+    <summary>ft_putchar_fd.c</summary>
+    <p>Outputs the character 'c' to the given file descriptor.</p>
+    </details>
+  <details>
+    <summary>ft_putendl_fd.c</summary>
+    <p>Outputs the string 's' to the given file descriptor followed by a newline.</p>
+    </details>
+  <details>
+    <summary>ft_putnbr_fd.c</summary>
+    <p>Outputs the integer 'n' to the given file descriptor.</p>
+    </details>
+  <details>
+    <summary>ft_putstr_fd.c</summary>
+    <p>Outputs the string 's' to the given file descriptor.</p>
+    </details>
+  <details>
+    <summary>ft_split.c</summary>
+    <p>Allocates (with malloc(3)) and returns an array of string obtained by splitting 's' using the character 'c' as a delimiter. The array must end with a NULL pointer.</p>
+    </details>
+  <details>
+    <summary>ft_striteri.c</summary>
+    <p>Applies the function 'f' on each character of the string 's' passed as argument, passing its index as first argument. Each character is passed by address to 'f' to be modified if necessary.</p>
+    </details>
+  <details>
+    <summary>ft_strjoin.c</summary>
+    <p>Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of 's1' and 's2'.</p>
+    </details>
+  <details>
+    <summary>ft_strmapi.c</summary>
+    <p>Applies the function 'f' to each character of the string 's', and passing its index as first argument to create a new string (with malloc(3)) resulting from successive applications of 'f'.</p>
+    </details>
+  <details>
+    <summary>ft_strtrim.c</summary>
+    <p>Allocates (with malloc(3)) and returns a copy of 's1' with the characters specified in 'set' removed from the beginning and the end of the strin</p>
+    </details>
+  <details>
+    <summary>ft_substr.c</summary>
+    <p>Allocates (with malloc(3)) and returns a substring from the string 's' The substring begins at index 'start' and is of maximum size 'len'.</p>
+    </details>
+  </ul>
+</details>
+
+<details>
+  <summary>Bonus Part</summary>
+  <ul>
+  <details>
+    <summary>ft_lstadd_back.c</summary>
+    <p>Adds the node 'new' at the end of the list.</p>
+    </details>
+  <details>
+    <summary>ft_lstadd_front.c</summary>
+    <p>Adds the node 'new' at the beginning of the list.</p>
+    </details>
+  <details>
+    <summary>ft_lstclear.c</summary>
+    <p>Deletes the given node and every successor of that node, usign the function 'del'. Finally, the pointer to the list must be set to NULL.</p>
+    </details>
+  <details>
+    <summary>ft_lstdelone.c</summary>
+    <p>Takes as a parameter a node and frees the memory of the node's content usign the function 'del' given as a parameter and free the node.</p>
+    </details>
+  <details>
+    <summary>ft_lstiter.c</summary>
+    <p>Iterates the list 'lst' and applies the function 'f' on the content of each node.</p>
+    </details>
+  <details>
+    <summary>ft_lstlast.c</summary>
+    <p>Return the last node of the list.</p>
+    </details>
+  <details>
+    <summary>ft_lstmap.c</summary>
+    <p>Iterates the list 'lst' and applies the function 'f' on the content of each node.</p>
+    </details>
+  <details>
+    <summary>ft_lstnew.c</summary>
+    <p>Allocates (with malloc(3)) and returns a new node. The member variable 'content' is initialized with the value of the parameter 'content'.</p>
+    </details>
+  <details>
+    <summary>ft_lstsize.c</summary>
+    <p>Counts the number of nodes in a list.</p>
+    </details>
+  </ul>
+</details>
 </div>
-
-<h2 align="left">
-	 :notebook: Subject
-</h2>
-<a href="https://github.com/knoxvillie/libft/blob/main/Subject/en.subject.pdf">Here</a> you can find the project's subject.
-<br /><br />
-
-
-<h2 align="left">
-	:medal_sports: Part 1 - Libc functions
-</h2>
-
-**`String manipulation:`**
-* `ft_atoi`
-* `ft_isalnum`
-* `ft_isalpha`
-* `ft_isascii`
-* `ft_isdigit`
-* `ft_isprint`
-* `ft_strchr`
-* `ft_strdup`
-* `ft_strlcat`
-* `ft_strlcpy`
-* `ft_strlen`
-* `ft_strncmp`
-* `ft_strnstr`
-* `ft_strrchr`
-* `ft_tolower`
-* `ft_toupper`
-
-**`Memory manipulation`**
-* `ft_bzero`
-* `ft_calloc`
-* `ft_memchr`
-* `ft_memcmp`
-* `ft_memcpy`
-* `ft_memmove`
-* `ft_memset`
-
-<h2 align="left">
-	:medal_sports: Part 2 - Additional functions
-</h2>
-
-`ft_substr` `ft_strjoin` `ft_strtrim` `ft_split` `ft_itoa` `ft_strmapi` `ft_striteri` `ft_putchar_fd` `ft_putstr_fd` `ft_putendl_fd` `ft_putnbr_fd` <br />
-
-<h2 align="left">
-	:trophy: Bonus Part
-</h2>
-
-`ft_lstnew` `ft_lstadd_front` `ft_lstsize` `ft_lstlast` `ft_lstadd_back` `ft_lstdelone` `ft_lstclear` `ft_lstiter` `ft_lstmap`  <br />
-<br />
-<br />
-
-<h2 align="left">
-	:memo: Tests
-</h2>
-
-- [Libft-Unit-Test](https://github.com/alelievr/libft-unit-test)
-  - ![Screenshot](https://imgur.com/a/dscm1ee)
-
-- [Libft-War-Machine](https://github.com/0x050f/libft-war-machine)
-  - ![Screenshot](https://imgur.com/a/h6NHu3t)
-
-- [Libftest](https://github.com/jtoty/Libftest)
-  - ![Screenshot](https://imgur.com/a/4qEFR8L)
-
