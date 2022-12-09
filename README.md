@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 <div align="center">
   <!-- Logo -->
   <a href="https://github.com/knoxvillie/libft">
@@ -25,9 +26,9 @@
 <h4>
     <a href="https://github.com/knoxvillie/libft">:large_blue_diamond: View Demo</a>
   <span> · </span>
-    <a href="https://github.com/knoxvillie/libft">:beetle: Report Bug</a>
+    <a href="https://github.com/knoxvillie/libft/issues">:beetle: Report Bug</a>
   <span> · </span>
-    <a href="https://github.com/knoxvillie/libft">:speech_balloon: Request Feature</a>
+    <a href="https://github.com/knoxvillie/libft/issues">:speech_balloon: Request Feature</a>
 </h4>
 
   <!-- Subject -->
