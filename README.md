@@ -239,7 +239,9 @@
  <!-- Contributing -->
 <h2>:wave: Contributing</h2>
 <p>Special thanks to <a href="https://github.com/AlexMitcul" target="_blank"><strong>AlexMitcul</strong></a> for helping with the documentation.</p>
+
 </br>
+
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
