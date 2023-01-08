@@ -31,7 +31,7 @@ int	ft_memcmp(const void *buf1, const void *buf2, size_t n)
 	s1 = (unsigned char *)buf1;
 	s2 = (unsigned char *)buf2;
 	i = 0;
-	if (n = 0)
+	if (n == 0)
 		return (0);
 	while ((*(s1 + i) == *(s2 + i)) && (i < n - 1))
 	{
