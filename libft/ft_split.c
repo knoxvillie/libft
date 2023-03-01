@@ -59,7 +59,7 @@ static int	ft_wordlen(char const *s, char c, int start)
 		count++;
 		i++;
 	}
-	return (i);
+	return (count);
 }
 
 static char	*ft_getword(char const *s, char c, int start)
@@ -75,8 +75,6 @@ static char	*ft_getword(char const *s, char c, int start)
 	word = (char *)malloc((len + 1) * sizeof(char));
 	if (!word)
 		return (NULL);
-	while (*(s + i) == c)
-		i++;
 	while (*(s + i) != c && *(s + i) != '\0')
 	{
 		word[j] = *(s + i);
