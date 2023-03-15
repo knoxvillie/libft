@@ -6,20 +6,24 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 10:34:04 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/27 14:44:00 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/03/12 21:49:28 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-
 /**
- * The ft_memcmp() function compares byte string s1 against byte string s2.
- * Both strings are assumed to be n bytes long.
+ * @brief	Compares bytes by bytes 's1' against 's2'
  *
- * The memcmp() function returns zero if the two strings are identical,
- * otherwise returns the difference (ASCII value) between the first two differing bytes.
- * Zero-length strings are always identical.
+ * The ft_memcmp() function returns zero if the two strings are identical,
+ * otherwise returns the difference (ASCII value) between the first two
+ * differing bytes. Zero-length strings are always identical. Both strings
+ * are assumed to be n bytes long.
+ *
+ * @param	buf1 Void buffer
+ * @param	buf2 Void buffer
+ * @param	n The length of both strings
+ * @return	int.
 **/
 
 int	ft_memcmp(const void *buf1, const void *buf2, size_t n)
@@ -33,9 +37,7 @@ int	ft_memcmp(const void *buf1, const void *buf2, size_t n)
 	i = 0;
 	if (n == 0)
 		return (0);
-	while ((*(s1 + i) == *(s2 + i)) && (i < n - 1))
-	{
+	while (s1[i] == s2[i] && (i < n - 1))
 		i++;
-	}
-	return ((*(s1 + i)) - (*(s2 + i)));
+	return (s1[i] - s2[i]);
 }

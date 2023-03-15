@@ -6,27 +6,19 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 14:36:21 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/27 18:50:17 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/03/12 21:59:13 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
-
+#include "libft.h"
 
 /**
- * - Description:
- * Adds the node 'new' at the beginning of the list.
+ * @brief	Adds the node 'new' at the beginning of the list.
  *
- * - Parameters:
- * lst: The address of a pointer to the first link of a list.
- * new: The address of a pointer to the node to be added
- *	 to the list.
- *
- * - Return value:
- * None
-**/
-
-#include "libft.h"
+ * @param lst	The address of a pointer to the first link of a list.
+ * @param new	The address of a pointer to the node to be added.
+ * @return	none
+ */
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
@@ -40,11 +32,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}
 }
-
-/*
-void	ft_lstadd_front(t_list **lst, t_list *new)
-{
-	new->next = *lst;
-	*lst = new;
-}
-*/

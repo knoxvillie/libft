@@ -6,7 +6,7 @@
 #    By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/11 14:34:06 by kfaustin          #+#    #+#              #
-#    Updated: 2022/11/15 15:41:47 by kfaustin         ###   ########.fr        #
+#    Updated: 2023/03/03 14:58:22 by kfaustin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRC =	ft_isalnum.c ft_isalpha.c ft_isdigit.c \
 		ft_strjoin.c ft_strtrim.c ft_split.c \
 		ft_itoa.c ft_strmapi.c ft_striteri.c \
 		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
-		ft_putnbr_fd.c
+		ft_putnbr_fd.c get_next_line.c
 
 SRC_OBJ = $(SRC:.c=.o)
 
@@ -37,7 +37,7 @@ CFLAGS = -Wall -Wextra -Werror
 LIB = ar rcs
 RM = rm -f
 
-all: $(NAME)
+all: $(NAME) bonus
 
 $(NAME): $(SRC_OBJ)
 	$(LIB) $(NAME) $(SRC_OBJ)

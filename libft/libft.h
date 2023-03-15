@@ -3,19 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfaustin <kfaustin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:59:41 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/15 15:42:53 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/03/06 22:23:49 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include<stdlib.h>
-# include<unistd.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
 
+//------------LIBFT---------------/
 // Mandatory Part 1:
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -68,5 +72,15 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+//------------GET_NEXT_LINE---------------/
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+# ifndef MAX_F_OPENED
+#  define MAX_F_OPENED 1024
+# endif
+
+char	*get_next_line(int fd);
 
 #endif

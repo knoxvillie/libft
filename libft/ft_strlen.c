@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 12:45:42 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/27 15:08:44 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/03/06 22:15:04 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ size_t	ft_strlen(const char *str)
 	size_t	i;
 
 	i = 0;
-	while (*(str + i) != '\0')
-	{
+	while (str && str[i])
 		i++;
-	}
 	return (i);
 }

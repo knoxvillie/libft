@@ -6,62 +6,38 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:10:20 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/27 15:57:23 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/03/12 21:51:26 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
 /**
- * Allocates (with malloc(3)) and returns a substring from the string 's'
- * The substring begins at index 'start' and is of maximum size 'len'.
+ * @brief	Allocates (with malloc(3)) and returns a substring from the string 's'
+ * 			The substring begins at index 'start' and is of maximum size 'len'.
  *
- * - Parameters:
- * s: The string from which to create the substring.
- * start: The start index of the substring in the string 's'.
- * len: The maximum length of the substring.
- *
- * - Returnes the substring or NULL if the allocation fails.
-**/
+ * @param s	The string from which to create the substring.
+ * @param start	The start index of the substring in the string 's'.
+ * @param len	The maximum length of the substring.
+ * @return	char *str
+ */
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
-	char	*ptr;
+	char	*str;
 
-	ptr = (char *)malloc((len + 1) * sizeof(char));
-	if (!ptr || !s)
-		return (0);
+	if (!s)
+		return (NULL);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
 	i = 0;
-	while (len > i && *(s + start + i) != '\0' && start < ft_strlen((char *)s))
+	while ((len > i) && s[start + i] && (start < ft_strlen((char *)s)))
 	{
-		*(ptr + i) = *(s + start + i);
+		str[i] = s[start + i];
 		i++;
 	}
-	*(ptr + i) = '\0';
-	return (ptr);
+	str[i] = '\0';
+	return (str);
 }
-
-/* (Moulinette)Error encountered while testing
-char	*ft_substr(char const *str, unsigned int start, size_t len)
-{
-	char	*substring;
-	size_t	size;
-	int		i;
-	if (str == NULL)
-		return (NULL);
-	if (start >= len)
-		len = 0;
-	size = len + 1;
-	substring = (char *)malloc(sizeof(char) * size);
-	if (!substring)
-		return (NULL);
-	i = 0;
-	while ((*(str + i + start) != '\0') && (i + start) < (start + len))
-	{
-			*(substring + i) = *(str + start + i);
-			i++;
-	}
-	*(substring + i) = '\0';
-	return (substring);
-}*/

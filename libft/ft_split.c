@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:20:00 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/27 15:58:12 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/03/01 12:18:16 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,6 +112,7 @@ char	**ft_split(char const *s, char c)
 	arr[j] = NULL;
 	return (arr);
 }
+
 /* BUGGED
 static int	ft_wordcount(const char *s, char c)
 {

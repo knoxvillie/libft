@@ -6,7 +6,7 @@
 /*   By: kfaustin <kfaustin@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:22:43 by kfaustin          #+#    #+#             */
-/*   Updated: 2022/11/27 14:43:29 by kfaustin         ###   ########.fr       */
+/*   Updated: 2023/03/06 22:18:28 by kfaustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,15 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	char	*buffer;
 	int		area;
 
-	area = nmemb * size;
-	buffer = malloc(area);
+	area = (nmemb * size);
+	buffer = (char *)malloc(sizeof(char) * area);
 	if (!buffer)
 		return (NULL);
 	while (--area >= 0)
-		*(buffer + area) = '\0';
+		buffer[area] = '\0';
 	return ((void *)buffer);
 }
+
 /* Old versions
 void	*ft_calloc(size_t nmemb, size_t size)
 {
